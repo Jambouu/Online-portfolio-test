@@ -1,0 +1,41 @@
+/* Container for the skills section */
+.skills-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Individual skill bar */
+.skill {
+    margin-bottom: 20px;
+}
+
+/* Skill name */
+.skill-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Progress bar background */
+.progress-bar {
+    background-color: #f36c6c;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 25px;
+}
+
+/* Progress bar fill */
+.progress-fill {
+    height: 100%;
+    border-radius: 25px;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 25px;
+    color: white;
+}
+
+/* Different skill levels */
+.html { width: 90%; background-color: #4caf50; }
+.css { width: 80%; background-color: #2196f3; }
+.javascript { width: 70%; background-color: #f44336; }
+.react { width: 60%; background-color: #ff9800; }

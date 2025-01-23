@@ -1,0 +1,150 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #121212; /* Dark background */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 80px;
+    background-color: #f36c6c; /* Custom accent color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar nav ul li {
+    margin: 100px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transform: rotate(-90deg);
+    display: block;
+    white-space: nowrap;
+}
+
+.sidebar nav ul li a:hover {
+    color: #242424;
+}
+
+/* Social media icons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between icons */
+    margin-bottom: 20px; /* Push the icons away from the bottom a bit */
+}
+
+.social-media a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #242424;
+}
+
+/* Main content area */
+.main-content {
+    display: flex;
+    width: calc(100% - 80px); /* Full width minus the sidebar width */
+    height: 100vh;
+    margin-left: 80px; /* Offset for sidebar */
+    box-sizing: border-box;
+}
+
+.intro-section, .image-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    height: 100vh; /* Ensures sections take full height */
+    box-sizing: border-box;
+}
+
+.intro-section {
+    background-color: #242424; /* Custom dark theme */
+    color: white;
+    text-align: center;
+}
+
+.image-section {
+    background-color: #f36c6c; /* Custom accent color */
+    text-align: center;
+}
+
+/* Outline text effect */
+.outline-text {
+    font-size: 48px;
+    font-weight: 600;
+    color: transparent; /* Make inner text transparent */
+    -webkit-text-stroke: 1px white; /* Add white outline */
+}
+
+/* Styling for "Jani" */
+.highlighted-name {
+    font-size: 64px;
+    font-weight: 600;
+    color: #f36c6c; /* Accent color */
+    margin: 10px 0; /* Adjust spacing between the texts */
+}
+
+/* Developer student heading */
+h2.outline-text {
+    font-size: 32px;
+    font-weight: 300;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #f36c6c;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #d55656;
+}
+
+/* Image section */
+.image-section img {
+    max-width: 150px;
+    border-radius: 15%;
+}
+
